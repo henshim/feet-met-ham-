@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Nhập giá trị</p>
+<input type="number" id="in">
+
+<h3>Chọn 1 đơn vị để chuyển đổi sang giá trị còn lại</h3>
+
+<button onclick="meterToFeet()">Meter</button>
+<button onclick="feetToMeter()">Feet</button>
+
+<p id="out"></p>
+<script>
+    function meterToFeet(meter) {
+        let feet = document.getElementById('in').value;
+        var meter = document.getElementById('in').value;
+        feet = 3.279 * meter;
+        document.getElementById('out').innerHTML = 'Kết quả là: ' + feet;
+    }
+
+    function feetToMeter(feet) {
+        let meter = document.getElementById('in').value;
+        var feet = document.getElementById('in').value;
+        meter = 0.305 * feet;
+        document.getElementById('out').innerHTML = 'Kết quả là: ' + meter;
+    }
+</script>
+</body>
+</html>
